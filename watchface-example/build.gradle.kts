@@ -5,10 +5,10 @@ plugins {
 
 
 android {
-    namespace = "com.dudu.watchface.example"
+    namespace = "com.lazytong.face"
     compileSdk = 33 
     defaultConfig {
-        applicationId = "com.dudu.watchface.example"
+        applicationId = "com.lazytong.face"
         minSdk = 19
         targetSdk = 33
         versionCode = 1

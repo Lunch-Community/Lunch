@@ -1,6 +1,6 @@
 <config
     preview="@drawable/preview"
     name="数码太空人"
-    watchface="com.dudu.watchface.example.WatchFaceImpl"
-    settings_activity="com.dudu.watchface.example.StubActivity"
+    watchface="com.lazytong.face.WatchFaceImpl"
+    settings_activity="com.lazytong.face.StubActivity"
 />

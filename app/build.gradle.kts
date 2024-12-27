@@ -11,7 +11,7 @@ android {
         minSdk = 19
         targetSdk = 33
         versionCode = 1
-        versionName = "Chip"
+        versionName = "LazyTong"
         multiDexEnabled = true
         vectorDrawables { 
             useSupportLibrary = true

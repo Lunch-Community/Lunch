@@ -1,4 +1,4 @@
-package com.dudu.watchface.example;
+package com.lazytong.face;
 import android.app.Activity;
 
 public class StubActivity extends Activity{

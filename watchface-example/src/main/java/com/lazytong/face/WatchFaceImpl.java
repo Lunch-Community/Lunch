@@ -1,4 +1,4 @@
-package com.dudu.watchface.example;
+package com.lazytong.face;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -12,7 +12,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import com.lazytong.launcher.model.WatchFace;
 import com.lazytong.launcher.utils.ILog;
-import com.dudu.watchface.example.R;
+import com.lazytong.face.R;
 
 import java.io.IOException;
 import java.util.Calendar;
