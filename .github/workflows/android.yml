@@ -23,23 +23,23 @@ jobs:
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
     - name: Build Launcher with Gradle
-      run: ./gradlew :app:assembleDebug
+      run: ./gradlew :app:assembleRelease
     - name: Build Utils Library with Gradle
-      run: ./gradlew :watchface-dev-utils:bundleDebugAar
+      run: ./gradlew :watchface-dev-utils:bundleReleaseAar
     - name: Build Watchface Example with Gradle
-      run: ./gradlew :watchface-example:assembleDebug
+      run: ./gradlew :watchface-example:assembleRelease
     - name: Upload Launcher APK
       uses: actions/upload-artifact@v4
       with:
         name: Launcher-debug
-        path: app/build/outputs/apk/debug/app-debug.apk
+        path: app/build/outputs/apk/release/app-release.apk
     - name: Upload Utils AAR
       uses: actions/upload-artifact@v4
       with:
         name: watchface-dev-utils
-        path: watchface-dev-utils/build/outputs/aar/watchface-dev-utils-debug.aar
+        path: watchface-dev-utils/build/outputs/aar/watchface-dev-utils-release.aar
     - name: Upload Watchface Example
       uses: actions/upload-artifact@v4
       with:
         name: watchface-example
-        path: watchface-example/build/outputs/apk/debug/watchface-example-debug.apk
+        path: watchface-example/build/outputs/apk/release/watchface-example-release.apk
