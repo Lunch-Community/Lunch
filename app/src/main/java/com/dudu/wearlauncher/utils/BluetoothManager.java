@@ -1,4 +1,4 @@
-package com.dudu.wearlauncher.utils;
+package com.lazytong.launcher.utils;
 import android.bluetooth.BluetoothAdapter;
 
 public class BluetoothManager {

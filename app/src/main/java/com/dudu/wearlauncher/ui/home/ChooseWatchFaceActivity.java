@@ -1,4 +1,4 @@
-package com.dudu.wearlauncher.ui.home;
+package com.lazytong.launcher.ui.home;
 
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
@@ -14,16 +14,16 @@ import androidx.fragment.app.Fragment;
 import androidx.viewpager.widget.ViewPager;
 import com.blankj.utilcode.util.FileIOUtils;
 import com.bumptech.glide.Glide;
-import com.dudu.wearlauncher.R;
-import com.dudu.wearlauncher.model.WatchFaceInfo;
-import com.dudu.wearlauncher.ui.BaseActivity;
-import com.dudu.wearlauncher.ui.ViewPagerFragmentAdapter;
-import com.dudu.wearlauncher.ui.settings.AddWatchfaceActivity;
-import com.dudu.wearlauncher.ui.settings.HiddenActivitiesSettingsActivity;
-import com.dudu.wearlauncher.utils.DensityUtil;
-import com.dudu.wearlauncher.utils.ILog;
-import com.dudu.wearlauncher.utils.SharedPreferencesUtil;
-import com.dudu.wearlauncher.utils.WatchFaceHelper;
+import com.lazytong.launcher.R;
+import com.lazytong.launcher.model.WatchFaceInfo;
+import com.lazytong.launcher.ui.BaseActivity;
+import com.lazytong.launcher.ui.ViewPagerFragmentAdapter;
+import com.lazytong.launcher.ui.settings.AddWatchfaceActivity;
+import com.lazytong.launcher.ui.settings.HiddenActivitiesSettingsActivity;
+import com.lazytong.launcher.utils.DensityUtil;
+import com.lazytong.launcher.utils.ILog;
+import com.lazytong.launcher.utils.SharedPreferencesUtil;
+import com.lazytong.launcher.utils.WatchFaceHelper;
 import org.jetbrains.annotations.NotNull;
 import org.json.JSONException;
 
@@ -76,7 +76,7 @@ public class ChooseWatchFaceActivity extends BaseActivity {
                     .into((ImageView) view.findViewById(R.id.wf_pre_img));
             view.findViewById(R.id.wf_pre_img).setScaleX(0.5F);
             view.findViewById(R.id.wf_pre_img).setScaleY(0.5F);
-            ((TextView) view.findViewById(R.id.wf_name_txt)).setText("添加表盘");
+            ((TextView) view.findViewById(R.id.wf_name_txt)).setText("添加预设");
             view.setOnClickListener(v->{
                 Intent intent = new Intent(requireActivity(),AddWatchfaceActivity.class);
                 requireActivity().startActivity(intent);

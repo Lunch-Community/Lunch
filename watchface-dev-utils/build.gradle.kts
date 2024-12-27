@@ -3,7 +3,7 @@ plugins {
 }
 
 android {
-    namespace = "com.dudu.wearlauncher"
+    namespace = "com.lazytong.launcher"
     compileSdk = 33
     }
     

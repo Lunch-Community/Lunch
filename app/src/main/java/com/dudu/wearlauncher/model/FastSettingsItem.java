@@ -1,7 +1,7 @@
-package com.dudu.wearlauncher.model;
+package com.lazytong.launcher.model;
 import android.content.Context;
 import android.graphics.drawable.Drawable;
-import com.dudu.wearlauncher.widget.SwitchIconButton;
+import com.lazytong.launcher.widget.SwitchIconButton;
 import java.util.ArrayList;
 import java.util.List;
 

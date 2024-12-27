@@ -1,4 +1,4 @@
-package com.dudu.wearlauncher.services;
+package com.lazytong.launcher.services;
 
 import android.app.ActivityManager;
 import android.content.*;
@@ -9,8 +9,8 @@ import android.os.Process;
 import android.service.notification.StatusBarNotification;
 import android.util.Log;
 import com.blankj.utilcode.util.AppUtils;
-import com.dudu.wearlauncher.model.Notification;
-import com.dudu.wearlauncher.utils.ILog;
+import com.lazytong.launcher.model.Notification;
+import com.lazytong.launcher.utils.ILog;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
@@ -41,7 +41,7 @@ public class NotificationListenerService extends android.service.notification.No
         ensureCollectorRunning();
         registerAsSystemService(this,this);
         receiver = new NotificationServiceReceiver();
-        registerReceiver(receiver, new IntentFilter("com.dudu.wearlauncher.NOTIFICATION_LISTENER"));
+        registerReceiver(receiver, new IntentFilter("com.lazytong.launcher.NOTIFICATION_LISTENER"));
         ILog.v("Notification Service Created!!!");
     }
 
@@ -54,7 +54,7 @@ public class NotificationListenerService extends android.service.notification.No
     @Override
     public void onNotificationPosted(StatusBarNotification sbn) {
         super.onNotificationPosted(sbn);
-        Intent intent = new Intent("com.dudu.wearlauncher.NotificationReceived");
+        Intent intent = new Intent("com.lazytong.launcher.NotificationReceived");
         intent.putExtra("notification", sbn2Notification(sbn));
         sendBroadcast(intent);
         ILog.v("Notification Received:" + sbn.getNotification().toString());
@@ -63,7 +63,7 @@ public class NotificationListenerService extends android.service.notification.No
     @Override
     public void onNotificationRemoved(StatusBarNotification sbn) {
         super.onNotificationRemoved(sbn);
-        Intent intent = new Intent("com.dudu.wearlauncher.NotificationRemoved");
+        Intent intent = new Intent("com.lazytong.launcher.NotificationRemoved");
         intent.putExtra("notification", sbn2Notification(sbn));
         sendBroadcast(intent);
         ILog.v("Notification Removed:" + sbn.getNotification().toString());
@@ -179,7 +179,7 @@ public class NotificationListenerService extends android.service.notification.No
                     for (StatusBarNotification sbn : NotificationListenerService.this.getActiveNotifications()) {
                         list.add(sbn2Notification(sbn));
                     }
-                    Intent intent2 = new Intent("com.dudu.wearlauncher.ListAllNotification");
+                    Intent intent2 = new Intent("com.lazytong.launcher.ListAllNotification");
                     intent2.putParcelableArrayListExtra("list", (ArrayList<? extends Parcelable>) list);
                     sendBroadcast(intent2);
                 }

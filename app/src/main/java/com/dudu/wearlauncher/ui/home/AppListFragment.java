@@ -1,4 +1,4 @@
-package com.dudu.wearlauncher.ui.home;
+package com.lazytong.launcher.ui.home;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -16,14 +16,14 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-import com.dudu.wearlauncher.R;
-import com.dudu.wearlauncher.utils.ILog;
-import com.dudu.wearlauncher.utils.IconPackLoader;
-import com.dudu.wearlauncher.utils.PackageManagerEx;
-import com.dudu.wearlauncher.utils.PmUtils;
+import com.lazytong.launcher.R;
+import com.lazytong.launcher.utils.ILog;
+import com.lazytong.launcher.utils.IconPackLoader;
+import com.lazytong.launcher.utils.PackageManagerEx;
+import com.lazytong.launcher.utils.PmUtils;
 
-import com.dudu.wearlauncher.utils.SharedPreferencesUtil;
-import com.dudu.wearlauncher.widget.MyRecyclerView;
+import com.lazytong.launcher.utils.SharedPreferencesUtil;
+import com.lazytong.launcher.widget.MyRecyclerView;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -58,7 +58,7 @@ public class AppListFragment extends Fragment{
             }
             
         };
-        requireActivity().registerReceiver(receiver,new IntentFilter("com.dudu.wearlauncher.REFESH_APP_LIST"));
+        requireActivity().registerReceiver(receiver,new IntentFilter("com.lazytong.launcher.REFESH_APP_LIST"));
         
         IntentFilter packageChangedFilter = new IntentFilter();
         packageChangedFilter.addDataScheme("package");

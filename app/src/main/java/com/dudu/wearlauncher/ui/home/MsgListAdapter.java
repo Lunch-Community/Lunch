@@ -1,4 +1,4 @@
-package com.dudu.wearlauncher.ui.home;
+package com.lazytong.launcher.ui.home;
 
 import android.app.PendingIntent;
 import android.content.Context;
@@ -18,11 +18,11 @@ import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.bumptech.glide.request.RequestOptions;
 import com.bumptech.glide.request.target.SimpleTarget;
 import com.bumptech.glide.request.transition.Transition;
-import com.dudu.wearlauncher.R;
-import com.dudu.wearlauncher.model.Notification;
-import com.dudu.wearlauncher.utils.DensityUtil;
-import com.dudu.wearlauncher.utils.ILog;
-import com.dudu.wearlauncher.widget.FormattedTextClock;
+import com.lazytong.launcher.R;
+import com.lazytong.launcher.model.Notification;
+import com.lazytong.launcher.utils.DensityUtil;
+import com.lazytong.launcher.utils.ILog;
+import com.lazytong.launcher.widget.FormattedTextClock;
 import com.google.android.material.card.MaterialCardView;
 import java.util.concurrent.CancellationException;
 import org.jetbrains.annotations.NotNull;
@@ -65,7 +65,7 @@ public class MsgListAdapter extends RecyclerView.Adapter<MsgListAdapter.MsgListH
         holder.msgContent.setText(notification.content);
         
         holder.delBtn.setOnClickListener(v -> {
-            Intent intent = new Intent("com.dudu.wearlauncher.NOTIFICATION_LISTENER");
+            Intent intent = new Intent("com.lazytong.launcher.NOTIFICATION_LISTENER");
             intent.putExtra("command", "cancelMsg");
             intent.putExtra("key", notification.key);
             context.sendBroadcast(intent);

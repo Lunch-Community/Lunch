@@ -10,8 +10,8 @@ import android.view.LayoutInflater;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
-import com.dudu.wearlauncher.model.WatchFace;
-import com.dudu.wearlauncher.utils.ILog;
+import com.lazytong.launcher.model.WatchFace;
+import com.lazytong.launcher.utils.ILog;
 import com.dudu.watchface.example.R;
 
 import java.io.IOException;

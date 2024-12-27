@@ -18,7 +18,7 @@
         android:layout_height="match_parent"
         android:layout_width="match_parent"
         android:layout_marginHorizontal="2dp">
-        <com.dudu.wearlauncher.widget.MyRecyclerView
+        <com.lazytong.launcher.widget.MyRecyclerView
             android:id="@+id/icon_pack_recycler"
             android:layout_height="match_parent"
             android:layout_width="match_parent" />

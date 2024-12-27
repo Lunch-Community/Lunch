@@ -1,4 +1,4 @@
-package com.dudu.wearlauncher.ui.settings;
+package com.lazytong.launcher.ui.settings;
 
 
 
@@ -22,10 +22,10 @@ import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.bumptech.glide.request.RequestOptions;
 import com.bumptech.glide.request.target.SimpleTarget;
 import com.bumptech.glide.request.transition.Transition;
-import com.dudu.wearlauncher.R;
+import com.lazytong.launcher.R;
 
-import com.dudu.wearlauncher.utils.DensityUtil;
-import com.dudu.wearlauncher.utils.SharedPreferencesUtil;
+import com.lazytong.launcher.utils.DensityUtil;
+import com.lazytong.launcher.utils.SharedPreferencesUtil;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;

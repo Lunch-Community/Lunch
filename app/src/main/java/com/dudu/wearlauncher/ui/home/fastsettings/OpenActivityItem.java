@@ -1,11 +1,11 @@
-package com.dudu.wearlauncher.ui.home.fastsettings;
+package com.lazytong.launcher.ui.home.fastsettings;
 
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
-import com.dudu.wearlauncher.R;
-import com.dudu.wearlauncher.WearLauncherApp;
-import com.dudu.wearlauncher.model.FastSettingsItem;
-import com.dudu.wearlauncher.widget.SwitchIconButton;
+import com.lazytong.launcher.R;
+import com.lazytong.launcher.WearLauncherApp;
+import com.lazytong.launcher.model.FastSettingsItem;
+import com.lazytong.launcher.widget.SwitchIconButton;
 
 public class OpenActivityItem extends FastSettingsItem {
     String packageName;

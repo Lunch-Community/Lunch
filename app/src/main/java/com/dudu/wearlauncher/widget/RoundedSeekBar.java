@@ -1,4 +1,4 @@
-package com.dudu.wearlauncher.widget;
+package com.lazytong.launcher.widget;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -10,7 +10,7 @@ import android.widget.ImageView;
 import android.widget.SeekBar;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import com.dudu.wearlauncher.R;
+import com.lazytong.launcher.R;
 
 public class RoundedSeekBar extends FrameLayout {
     Drawable icon;

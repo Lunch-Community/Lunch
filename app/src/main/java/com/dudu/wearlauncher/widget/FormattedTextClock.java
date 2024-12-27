@@ -1,10 +1,10 @@
-package com.dudu.wearlauncher.widget;
+package com.lazytong.launcher.widget;
 
 import android.content.Context;
 import android.os.Handler;
 import android.os.Message;
 import android.util.AttributeSet;
-import com.dudu.wearlauncher.utils.TimeUtil;
+import com.lazytong.launcher.utils.TimeUtil;
 
 import java.util.Date;
 

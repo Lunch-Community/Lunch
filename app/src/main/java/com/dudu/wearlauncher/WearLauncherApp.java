@@ -1,4 +1,4 @@
-package com.dudu.wearlauncher;
+package com.lazytong.launcher;
 
 import android.app.Application;
 import android.content.Context;
@@ -8,7 +8,7 @@ import android.util.Log;
 import android.widget.Toast;
 import androidx.multidex.MultiDex;
 import com.blankj.utilcode.util.AppUtils;
-import com.dudu.wearlauncher.utils.SharedPreferencesUtil;
+import com.lazytong.launcher.utils.SharedPreferencesUtil;
 import com.tencent.bugly.crashreport.CrashReport;
 public class WearLauncherApp extends Application {
     private static Context context;

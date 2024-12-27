@@ -54,7 +54,7 @@
                     app:layout_constraintStart_toEndOf="@id/msg_icon"
                     app:layout_constraintTop_toTopOf="parent"/>
 
-                <com.dudu.wearlauncher.widget.FormattedTextClock
+                <com.lazytong.launcher.widget.FormattedTextClock
                     android:id="@+id/msg_time"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

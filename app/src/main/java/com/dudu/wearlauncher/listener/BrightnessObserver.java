@@ -1,12 +1,12 @@
-package com.dudu.wearlauncher.listener;
+package com.lazytong.launcher.listener;
 import android.content.Context;
 import android.database.ContentObserver;
 import android.os.Build;
 import android.os.Handler;
 import android.os.Looper;
 import android.provider.Settings;
-import com.dudu.wearlauncher.WearLauncherApp;
-import com.dudu.wearlauncher.utils.ILog;
+import com.lazytong.launcher.WearLauncherApp;
+import com.lazytong.launcher.utils.ILog;
 
 public class BrightnessObserver {
     public interface BrightnessChangeListener {

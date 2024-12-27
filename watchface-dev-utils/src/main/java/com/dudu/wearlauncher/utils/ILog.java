@@ -1,4 +1,4 @@
-package com.dudu.wearlauncher.utils;
+package com.lazytong.launcher.utils;
 import android.util.Log;
 
 public class ILog {

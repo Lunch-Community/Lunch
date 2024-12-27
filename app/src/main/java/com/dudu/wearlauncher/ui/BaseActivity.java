@@ -1,4 +1,4 @@
-package com.dudu.wearlauncher.ui;
+package com.lazytong.launcher.ui;
 
 import android.R;
 import android.content.Context;
@@ -6,9 +6,9 @@ import android.content.res.Configuration;
 import android.os.Bundle;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-import com.dudu.wearlauncher.WearLauncherApp;
-import com.dudu.wearlauncher.utils.ILog;
-import com.dudu.wearlauncher.utils.SharedPreferencesUtil;
+import com.lazytong.launcher.WearLauncherApp;
+import com.lazytong.launcher.utils.ILog;
+import com.lazytong.launcher.utils.SharedPreferencesUtil;
 
 
 public class BaseActivity extends AppCompatActivity {

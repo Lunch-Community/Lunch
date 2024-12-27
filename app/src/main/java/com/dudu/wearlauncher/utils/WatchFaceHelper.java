@@ -1,4 +1,4 @@
-package com.dudu.wearlauncher.utils;
+package com.lazytong.launcher.utils;
 
 import android.content.Context;
 import android.content.Intent;
@@ -18,10 +18,10 @@ import com.blankj.utilcode.util.FileIOUtils;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.resource.bitmap.RoundedCorners;
 import com.bumptech.glide.request.RequestOptions;
-import com.dudu.wearlauncher.R;
-import com.dudu.wearlauncher.WearLauncherApp;
-import com.dudu.wearlauncher.model.WatchFace;
-import com.dudu.wearlauncher.model.WatchFaceInfo;
+import com.lazytong.launcher.R;
+import com.lazytong.launcher.WearLauncherApp;
+import com.lazytong.launcher.model.WatchFace;
+import com.lazytong.launcher.model.WatchFaceInfo;
 import dalvik.system.DexClassLoader;
 import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
@@ -32,13 +32,13 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
-import static com.dudu.wearlauncher.model.WatchFace.*;
+import static com.lazytong.launcher.model.WatchFace.*;
 import org.xmlpull.v1.XmlPullParserException;
 
 public class WatchFaceHelper {
     public static List<WatchFaceInfo> getWatchfaces() {
     	PackageManager pm = WearLauncherApp.getContext().getPackageManager();
-        Intent intent = new Intent("com.dudu.wearlauncher.WATCHFACE");
+        Intent intent = new Intent("com.lazytong.launcher.WATCHFACE");
         List<WatchFaceInfo> watchfaceList = new ArrayList<>();
         try {
             for(ResolveInfo info : pm.queryIntentActivities(intent,0)) {

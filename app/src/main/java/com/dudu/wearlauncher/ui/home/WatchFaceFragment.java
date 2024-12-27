@@ -1,4 +1,4 @@
-package com.dudu.wearlauncher.ui.home;
+package com.lazytong.launcher.ui.home;
 
 import android.annotation.SuppressLint;
 import android.content.BroadcastReceiver;
@@ -23,24 +23,24 @@ import cn.leaqi.drawer.SwipeDrawer;
 import com.blankj.utilcode.util.FileIOUtils;
 import com.blankj.utilcode.util.VolumeUtils;
 import com.blankj.utilcode.util.ZipUtils;
-import com.dudu.wearlauncher.R;
-import com.dudu.wearlauncher.listener.BrightnessObserver;
-import com.dudu.wearlauncher.listener.VolumeChangeObserver;
-import com.dudu.wearlauncher.model.Notification;
-import com.dudu.wearlauncher.model.WatchFace;
-import com.dudu.wearlauncher.model.WatchFaceBridge;
-import com.dudu.wearlauncher.model.WatchFaceInfo;
-import com.dudu.wearlauncher.ui.home.fastsettings.BluetoothItem;
-import com.dudu.wearlauncher.ui.home.fastsettings.MobileNetworkItem;
-import com.dudu.wearlauncher.ui.home.fastsettings.WifiSwitchItem;
-import com.dudu.wearlauncher.utils.ILog;
-import com.dudu.wearlauncher.utils.SettingCenterManager;
-import com.dudu.wearlauncher.utils.SharedPreferencesUtil;
-import com.dudu.wearlauncher.utils.WatchFaceHelper;
-import com.dudu.wearlauncher.widget.MyLinearLayoutManager;
-import com.dudu.wearlauncher.widget.MyRecyclerView;
-import com.dudu.wearlauncher.widget.RoundedSeekBar;
-import com.dudu.wearlauncher.widget.SwitchIconButton;
+import com.lazytong.launcher.R;
+import com.lazytong.launcher.listener.BrightnessObserver;
+import com.lazytong.launcher.listener.VolumeChangeObserver;
+import com.lazytong.launcher.model.Notification;
+import com.lazytong.launcher.model.WatchFace;
+import com.lazytong.launcher.model.WatchFaceBridge;
+import com.lazytong.launcher.model.WatchFaceInfo;
+import com.lazytong.launcher.ui.home.fastsettings.BluetoothItem;
+import com.lazytong.launcher.ui.home.fastsettings.MobileNetworkItem;
+import com.lazytong.launcher.ui.home.fastsettings.WifiSwitchItem;
+import com.lazytong.launcher.utils.ILog;
+import com.lazytong.launcher.utils.SettingCenterManager;
+import com.lazytong.launcher.utils.SharedPreferencesUtil;
+import com.lazytong.launcher.utils.WatchFaceHelper;
+import com.lazytong.launcher.widget.MyLinearLayoutManager;
+import com.lazytong.launcher.widget.MyRecyclerView;
+import com.lazytong.launcher.widget.RoundedSeekBar;
+import com.lazytong.launcher.widget.SwitchIconButton;
 import org.json.JSONArray;
 import org.json.JSONException;
 
@@ -198,7 +198,7 @@ public class WatchFaceFragment extends Fragment{
                 msgView.setAdapter(msgListAdapter);
             }
         };
-        requireActivity().registerReceiver(msgListAllReceiver, new IntentFilter("com.dudu.wearlauncher.ListAllNotification"));
+        requireActivity().registerReceiver(msgListAllReceiver, new IntentFilter("com.lazytong.launcher.ListAllNotification"));
 
         postGetAllNotification();
 
@@ -218,7 +218,7 @@ public class WatchFaceFragment extends Fragment{
                 msgListAdapter.addSbn(notification);
             }
         };
-        requireActivity().registerReceiver(msgReceiver, new IntentFilter("com.dudu.wearlauncher.NotificationReceived"));
+        requireActivity().registerReceiver(msgReceiver, new IntentFilter("com.lazytong.launcher.NotificationReceived"));
 
         msgRemovedReceiver = new BroadcastReceiver() {
             @Override
@@ -227,7 +227,7 @@ public class WatchFaceFragment extends Fragment{
                 msgListAdapter.removeSbn(notification);
             }
         };
-        requireActivity().registerReceiver(msgRemovedReceiver, new IntentFilter("com.dudu.wearlauncher.NotificationRemoved"));
+        requireActivity().registerReceiver(msgRemovedReceiver, new IntentFilter("com.lazytong.launcher.NotificationRemoved"));
         
         refreshWatchFace();
         
@@ -237,7 +237,7 @@ public class WatchFaceFragment extends Fragment{
                 refreshWatchFace();
             }
         };
-        IntentFilter watchFaceChangeFilter = new IntentFilter("com.dudu.wearlauncher.WatchFaceChange");
+        IntentFilter watchFaceChangeFilter = new IntentFilter("com.lazytong.launcher.WatchFaceChange");
         requireActivity().registerReceiver(watchFaceChangeReceiver,watchFaceChangeFilter);
         batteryChangeReceiver = new BroadcastReceiver(){
             @Override
@@ -263,7 +263,7 @@ public class WatchFaceFragment extends Fragment{
     }
 
     private void postGetAllNotification() {
-        Intent intent = new Intent("com.dudu.wearlauncher.NOTIFICATION_LISTENER");
+        Intent intent = new Intent("com.lazytong.launcher.NOTIFICATION_LISTENER");
         intent.putExtra("command", "listAll");
         requireActivity().sendBroadcast(intent);
     }
@@ -278,7 +278,7 @@ public class WatchFaceFragment extends Fragment{
                 watchFace = new WatchFaceBridge(watchFaceView);
                 if(watchFace != null) {
                 //watchFace.setOnClickListener(v->{
-                    //覆盖原Listener防止打不开表盘切换界面
+                    //覆盖原Listener防止打不开预设切换界面
                 //});
                     layoutParams = new FrameLayout.LayoutParams(FrameLayout.LayoutParams.MATCH_PARENT,FrameLayout.LayoutParams.MATCH_PARENT);
                     watchFaceBox.addView(watchFaceView,layoutParams);
@@ -296,7 +296,7 @@ public class WatchFaceFragment extends Fragment{
             }
         } catch (Exception err) {
             onWatchFaceLoadFailed();
-            ILog.e("表盘加载失败:" + err);
+            ILog.e("预设加载失败:" + err);
             err.printStackTrace();
             //FileIOUtils.writeFileFromString(watchFaceFolder + "/" + System.currentTimeMillis() + "watchface.log", err.toString());
         }
@@ -307,7 +307,7 @@ public class WatchFaceFragment extends Fragment{
         FrameLayout.LayoutParams lp = new FrameLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
         lp.gravity = Gravity.CENTER;
         TextView tv = new TextView(requireActivity());
-        tv.setText("表盘加载失败");
+        tv.setText("预设加载失败");
         watchFaceBox.addView(tv, lp);
     }
     
@@ -315,7 +315,7 @@ public class WatchFaceFragment extends Fragment{
         FrameLayout.LayoutParams lp = new FrameLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
         lp.gravity = Gravity.CENTER;
         TextView tv = new TextView(requireActivity());
-        tv.setText("还没有表盘哦\n快长按这里添加吧");
+        tv.setText("还没有预设哦\n快长按这里添加吧");
         watchFaceBox.addView(tv, lp);
     }
 

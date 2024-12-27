@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="hidden_activities">
-        <item>com.dudu.wearlauncher/com.dudu.wearlauncher.ui.home.HomeActivity</item>
+        <item>com.lazytong.launcher/com.lazytong.launcher.ui.home.HomeActivity</item>
     </string-array>
 </resources>

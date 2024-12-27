@@ -1,4 +1,4 @@
-package com.dudu.wearlauncher.listener;
+package com.lazytong.launcher.listener;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;

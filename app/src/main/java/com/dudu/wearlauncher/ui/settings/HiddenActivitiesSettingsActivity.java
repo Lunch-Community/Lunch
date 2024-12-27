@@ -1,15 +1,15 @@
-package com.dudu.wearlauncher.ui.settings;
+package com.lazytong.launcher.ui.settings;
 import android.content.Intent;
 import android.content.pm.ResolveInfo;
 import android.os.Bundle;
 import android.widget.LinearLayout;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-import com.dudu.wearlauncher.R;
-import com.dudu.wearlauncher.ui.BaseActivity;
-import com.dudu.wearlauncher.utils.PmUtils;
-import com.dudu.wearlauncher.widget.MyLinearLayoutManager;
-import com.dudu.wearlauncher.widget.MyRecyclerView;
+import com.lazytong.launcher.R;
+import com.lazytong.launcher.ui.BaseActivity;
+import com.lazytong.launcher.utils.PmUtils;
+import com.lazytong.launcher.widget.MyLinearLayoutManager;
+import com.lazytong.launcher.widget.MyRecyclerView;
 import java.util.List;
 
 public class HiddenActivitiesSettingsActivity extends BaseActivity{
@@ -25,7 +25,7 @@ public class HiddenActivitiesSettingsActivity extends BaseActivity{
     }
     @Override
     protected void onDestroy() {
-        Intent intent = new Intent("com.dudu.wearlauncher.REFESH_APP_LIST");
+        Intent intent = new Intent("com.lazytong.launcher.REFESH_APP_LIST");
         sendBroadcast(intent);
         super.onDestroy();
     }

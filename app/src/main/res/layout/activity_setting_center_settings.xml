@@ -26,7 +26,7 @@
                 android:layout_width="match_parent"
                 android:layout_margin="4dp">
 
-                <com.dudu.wearlauncher.widget.SwitchIconButton
+                <com.lazytong.launcher.widget.SwitchIconButton
                     android:id="@+id/settings_btn_1"
                     android:layout_height="48dp"
                     android:layout_width="48dp"
@@ -35,7 +35,7 @@
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent" />
 
-                <com.dudu.wearlauncher.widget.SwitchIconButton
+                <com.lazytong.launcher.widget.SwitchIconButton
                     android:id="@+id/settings_btn_2"
                     android:layout_height="48dp"
                     android:layout_width="48dp"
@@ -45,7 +45,7 @@
                     app:layout_constraintStart_toEndOf="@id/settings_btn_1"
                     app:layout_constraintEnd_toStartOf="@id/settings_btn_3" />
 
-                <com.dudu.wearlauncher.widget.SwitchIconButton
+                <com.lazytong.launcher.widget.SwitchIconButton
                     android:id="@+id/settings_btn_3"
                     android:layout_height="48dp"
                     android:layout_width="48dp"
@@ -67,7 +67,7 @@
                 android:columnCount="3"
                 android:layout_margin="4dp">
 
-                <com.dudu.wearlauncher.widget.SwitchIconButton
+                <com.lazytong.launcher.widget.SwitchIconButton
                     android:id="@+id/settings_wifi_btn"
                     android:layout_height="48dp"
                     android:layout_width="48dp"
@@ -76,7 +76,7 @@
                     android:layout_rowWeight="1"
                     android:layout_gravity="center" />
 
-                <com.dudu.wearlauncher.widget.SwitchIconButton
+                <com.lazytong.launcher.widget.SwitchIconButton
                     android:id="@+id/settings_mobile_network_btn"
                     android:layout_height="48dp"
                     android:layout_width="48dp"
@@ -85,7 +85,7 @@
                     android:layout_rowWeight="1"
                     android:layout_gravity="center" />
 
-                <com.dudu.wearlauncher.widget.SwitchIconButton
+                <com.lazytong.launcher.widget.SwitchIconButton
                     android:id="@+id/settings_bluetooth_btn"
                     android:layout_height="48dp"
                     android:layout_width="48dp"

@@ -1,4 +1,4 @@
-package com.dudu.wearlauncher.utils;
+package com.lazytong.launcher.utils;
 import android.content.Context;
 import android.content.res.Resources;
 import android.graphics.Canvas;

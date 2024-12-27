@@ -2,7 +2,7 @@
 <manifest
                 xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:sharedUserId="com.dudu.wearlauncher">
+    android:sharedUserId="com.lazytong.launcher">
 
     <application
         android:allowBackup="true"
@@ -18,7 +18,7 @@
             
             <intent-filter>
                 <action
-                    android:name="com.dudu.wearlauncher.WATCHFACE" />
+                    android:name="com.lazytong.launcher.WATCHFACE" />
                 <category
                     android:name="android.intent.category.DEFAULT" />
             </intent-filter>

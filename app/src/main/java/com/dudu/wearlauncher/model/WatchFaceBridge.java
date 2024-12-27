@@ -1,4 +1,4 @@
-package com.dudu.wearlauncher.model;
+package com.lazytong.launcher.model;
 import java.lang.reflect.InvocationTargetException;
 
 public class WatchFaceBridge {

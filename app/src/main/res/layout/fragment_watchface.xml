@@ -17,7 +17,7 @@
         android:background="@android:color/black"
         android:id="@+id/topDrawer">
 
-        <com.dudu.wearlauncher.widget.MyRecyclerView
+        <com.lazytong.launcher.widget.MyRecyclerView
             android:id="@+id/msg_list"
             android:layout_width="match_parent"
             android:layout_height="match_parent"/>
@@ -49,7 +49,7 @@
             android:layout_width="match_parent"
             android:layout_margin="4dp">
 
-            <com.dudu.wearlauncher.widget.SwitchIconButton
+            <com.lazytong.launcher.widget.SwitchIconButton
                 android:id="@+id/setting_center_btn1"
                 android:layout_height="48dp"
                 android:layout_width="48dp"
@@ -58,7 +58,7 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"/>
 
-            <com.dudu.wearlauncher.widget.SwitchIconButton
+            <com.lazytong.launcher.widget.SwitchIconButton
                 android:id="@+id/setting_center_btn2"
                 android:layout_height="48dp"
                 android:layout_width="48dp"
@@ -68,7 +68,7 @@
                 app:layout_constraintStart_toEndOf="@id/setting_center_btn1"
                 app:layout_constraintEnd_toStartOf="@id/setting_center_btn3"/>
 
-            <com.dudu.wearlauncher.widget.SwitchIconButton
+            <com.lazytong.launcher.widget.SwitchIconButton
                 android:id="@+id/setting_center_btn3"
                 android:layout_height="48dp"
                 android:layout_width="48dp"
@@ -79,13 +79,13 @@
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-        <com.dudu.wearlauncher.widget.RoundedSeekBar
+        <com.lazytong.launcher.widget.RoundedSeekBar
             android:id="@+id/volume_seekbar"
             android:layout_width="match_parent"
             android:layout_height="48dp"
             app:left_icon="@drawable/icon_volume_0"
             android:layout_margin="4dp"/>
-        <com.dudu.wearlauncher.widget.RoundedSeekBar
+        <com.lazytong.launcher.widget.RoundedSeekBar
             android:id="@+id/brightness_seekbar"
             android:layout_width="match_parent"
             android:layout_height="48dp"

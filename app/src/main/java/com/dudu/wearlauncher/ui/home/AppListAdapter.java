@@ -1,4 +1,4 @@
-package com.dudu.wearlauncher.ui.home;
+package com.lazytong.launcher.ui.home;
 
 import android.content.Context;
 import android.content.Intent;
@@ -19,11 +19,11 @@ import com.blankj.utilcode.util.ImageUtils;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.bumptech.glide.request.RequestOptions;
-import com.dudu.wearlauncher.R;
+import com.lazytong.launcher.R;
 
-import com.dudu.wearlauncher.ui.BaseActivity;
-import com.dudu.wearlauncher.utils.DensityUtil;
-import com.dudu.wearlauncher.utils.ILog;
+import com.lazytong.launcher.ui.BaseActivity;
+import com.lazytong.launcher.utils.DensityUtil;
+import com.lazytong.launcher.utils.ILog;
 import java.util.List;
 import java.util.Map;
 

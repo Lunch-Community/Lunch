@@ -1,4 +1,4 @@
-package com.dudu.wearlauncher.ui.home.fastsettings;
+package com.lazytong.launcher.ui.home.fastsettings;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
@@ -8,14 +8,14 @@ import android.provider.Settings;
 import com.blankj.utilcode.util.AppUtils;
 import com.blankj.utilcode.util.RomUtils;
 import com.blankj.utilcode.util.ShellUtils;
-import com.dudu.wearlauncher.R;
-import com.dudu.wearlauncher.WearLauncherApp;
-import com.dudu.wearlauncher.listener.MobileNetworkObserver;
-import com.dudu.wearlauncher.model.FastSettingsItem;
-import com.dudu.wearlauncher.utils.ILog;
-import com.dudu.wearlauncher.utils.MobileDataUtil;
-import com.dudu.wearlauncher.utils.RootUtil;
-import com.dudu.wearlauncher.widget.SwitchIconButton;
+import com.lazytong.launcher.R;
+import com.lazytong.launcher.WearLauncherApp;
+import com.lazytong.launcher.listener.MobileNetworkObserver;
+import com.lazytong.launcher.model.FastSettingsItem;
+import com.lazytong.launcher.utils.ILog;
+import com.lazytong.launcher.utils.MobileDataUtil;
+import com.lazytong.launcher.utils.RootUtil;
+import com.lazytong.launcher.widget.SwitchIconButton;
 
 public class MobileNetworkItem extends FastSettingsItem {
     @Override

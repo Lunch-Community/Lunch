@@ -9,7 +9,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="添加表盘"
+        android:text="添加预设"
         android:textColor="@color/theme_color"
         android:textStyle="bold" />
     <FrameLayout
@@ -21,8 +21,8 @@
             android:layout_height="wrap_content"
             android:gravity="center" 
             android:layout_gravity="center"
-            android:text="还没有表盘\n快去安装新表盘吧"/>
-        <com.dudu.wearlauncher.widget.MyRecyclerView
+            android:text="还没有预设\n快去安装新预设吧"/>
+        <com.lazytong.launcher.widget.MyRecyclerView
             android:id="@+id/watchface_list"
             android:layout_width="match_parent"
             android:layout_height="match_parent"

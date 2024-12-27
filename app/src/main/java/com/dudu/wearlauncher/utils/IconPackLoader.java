@@ -1,4 +1,4 @@
-package com.dudu.wearlauncher.utils;
+package com.lazytong.launcher.utils;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
@@ -8,8 +8,8 @@ import android.content.pm.ResolveInfo;
 import android.content.res.Resources;
 import android.content.res.XmlResourceParser;
 import android.graphics.drawable.Drawable;
-import com.dudu.wearlauncher.WearLauncherApp;
-import com.dudu.wearlauncher.model.IconPack;
+import com.lazytong.launcher.WearLauncherApp;
+import com.lazytong.launcher.model.IconPack;
 import com.tencent.bugly.proguard.i;
 import java.io.IOException;
 import java.util.ArrayList;

@@ -1,11 +1,11 @@
-package com.dudu.wearlauncher.widget;
+package com.lazytong.launcher.widget;
 
 import android.content.Context;
 import android.util.AttributeSet;
 import android.view.View;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-import com.dudu.wearlauncher.utils.ILog;
+import com.lazytong.launcher.utils.ILog;
 import java.util.ArrayList;
 import java.util.List;
 

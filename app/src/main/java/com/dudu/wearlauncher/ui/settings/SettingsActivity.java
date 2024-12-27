@@ -1,9 +1,9 @@
-package com.dudu.wearlauncher.ui.settings;
+package com.lazytong.launcher.ui.settings;
 
 import android.content.Intent;
 import android.os.Bundle;
-import com.dudu.wearlauncher.R;
-import com.dudu.wearlauncher.ui.BaseActivity;
+import com.lazytong.launcher.R;
+import com.lazytong.launcher.ui.BaseActivity;
 
 public class SettingsActivity extends BaseActivity{
     @Override

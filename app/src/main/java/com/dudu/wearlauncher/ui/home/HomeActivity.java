@@ -1,4 +1,4 @@
-package com.dudu.wearlauncher.ui.home;
+package com.lazytong.launcher.ui.home;
 
 import android.content.ComponentName;
 import android.content.Intent;
@@ -8,16 +8,16 @@ import android.os.Bundle;
 import android.util.Log;
 import androidx.fragment.app.Fragment;
 import androidx.viewpager.widget.ViewPager;
-import com.dudu.wearlauncher.R;
-import com.dudu.wearlauncher.model.WatchFaceInfo;
-import com.dudu.wearlauncher.services.NotificationListenerService;
-import com.dudu.wearlauncher.ui.BaseActivity;
-import com.dudu.wearlauncher.ui.ViewPagerFragmentAdapter;
-import com.dudu.wearlauncher.ui.home.pagertransformer.CubicOverturnTransformer;
-import com.dudu.wearlauncher.ui.home.pagertransformer.XTCTrans;
-import com.dudu.wearlauncher.ui.settings.RequestPermissonActivity;
-import com.dudu.wearlauncher.utils.SharedPreferencesUtil;
-import com.dudu.wearlauncher.utils.WatchFaceHelper;
+import com.lazytong.launcher.R;
+import com.lazytong.launcher.model.WatchFaceInfo;
+import com.lazytong.launcher.services.NotificationListenerService;
+import com.lazytong.launcher.ui.BaseActivity;
+import com.lazytong.launcher.ui.ViewPagerFragmentAdapter;
+import com.lazytong.launcher.ui.home.pagertransformer.CubicOverturnTransformer;
+import com.lazytong.launcher.ui.home.pagertransformer.XTCTrans;
+import com.lazytong.launcher.ui.settings.RequestPermissonActivity;
+import com.lazytong.launcher.utils.SharedPreferencesUtil;
+import com.lazytong.launcher.utils.WatchFaceHelper;
 
 import java.util.List;
 

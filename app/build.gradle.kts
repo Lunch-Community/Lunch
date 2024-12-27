@@ -4,10 +4,10 @@ plugins {
 }
 
 android {
-    namespace = "com.dudu.wearlauncher"
+    namespace = "com.lazytong.launcher"
     compileSdk = 33
     defaultConfig {
-        applicationId = "com.dudu.wearlauncher"
+        applicationId = "com.lazytong.launcher"
         minSdk = 19
         targetSdk = 33
         versionCode = 1
@@ -24,20 +24,20 @@ android {
     }
     signingConfigs {
         
-        create("lunch-community") {
-            keyAlias = "Lunch Community"
-            keyPassword = "lunch-is-the-best"
-            storeFile = file("../lunch-community.keystore")
-            storePassword = "lunch-is-the-best"
+        create("Launcher-community") {
+            keyAlias = "Launcher Community"
+            keyPassword = "Launcher-is-the-best"
+            storeFile = file("../Launcher-community.keystore")
+            storePassword = "Launcher-is-the-best"
         }
     }
     buildTypes {
         debug {
-            signingConfig = signingConfigs.getByName("lunch-community")
+            signingConfig = signingConfigs.getByName("Launcher-community")
         }
         release {
             isMinifyEnabled = true
-            signingConfig = signingConfigs.getByName("lunch-community")
+            signingConfig = signingConfigs.getByName("Launcher-community")
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
         }
     }

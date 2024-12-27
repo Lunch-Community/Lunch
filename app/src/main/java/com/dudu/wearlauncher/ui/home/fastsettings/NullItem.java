@@ -1,8 +1,8 @@
-package com.dudu.wearlauncher.ui.home.fastsettings;
+package com.lazytong.launcher.ui.home.fastsettings;
 import android.graphics.drawable.Drawable;
-import com.dudu.wearlauncher.R;
-import com.dudu.wearlauncher.WearLauncherApp;
-import com.dudu.wearlauncher.model.FastSettingsItem;
+import com.lazytong.launcher.R;
+import com.lazytong.launcher.WearLauncherApp;
+import com.lazytong.launcher.model.FastSettingsItem;
 
 public class NullItem extends FastSettingsItem{
     @Override

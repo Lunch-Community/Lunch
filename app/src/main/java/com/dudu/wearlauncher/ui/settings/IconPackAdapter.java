@@ -1,4 +1,4 @@
-package com.dudu.wearlauncher.ui.settings;
+package com.lazytong.launcher.ui.settings;
 
 import android.content.Context;
 import android.content.Intent;
@@ -18,10 +18,10 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.bumptech.glide.request.RequestOptions;
-import com.dudu.wearlauncher.R;
-import com.dudu.wearlauncher.model.IconPack;
-import com.dudu.wearlauncher.utils.DensityUtil;
-import com.dudu.wearlauncher.utils.SharedPreferencesUtil;
+import com.lazytong.launcher.R;
+import com.lazytong.launcher.model.IconPack;
+import com.lazytong.launcher.utils.DensityUtil;
+import com.lazytong.launcher.utils.SharedPreferencesUtil;
 import com.google.android.material.card.MaterialCardView;
 import com.google.android.material.radiobutton.MaterialRadioButton;
 import java.util.List;

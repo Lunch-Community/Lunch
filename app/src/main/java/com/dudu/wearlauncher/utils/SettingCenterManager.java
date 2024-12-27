@@ -1,10 +1,10 @@
-package com.dudu.wearlauncher.utils;
+package com.lazytong.launcher.utils;
 import android.widget.Button;
-import com.dudu.wearlauncher.model.FastSettingsItem;
-import com.dudu.wearlauncher.ui.home.fastsettings.BluetoothItem;
-import com.dudu.wearlauncher.ui.home.fastsettings.MobileNetworkItem;
-import com.dudu.wearlauncher.ui.home.fastsettings.NullItem;
-import com.dudu.wearlauncher.ui.home.fastsettings.WifiSwitchItem;
+import com.lazytong.launcher.model.FastSettingsItem;
+import com.lazytong.launcher.ui.home.fastsettings.BluetoothItem;
+import com.lazytong.launcher.ui.home.fastsettings.MobileNetworkItem;
+import com.lazytong.launcher.ui.home.fastsettings.NullItem;
+import com.lazytong.launcher.ui.home.fastsettings.WifiSwitchItem;
 import com.google.gson.internal.ConstructorConstructor;
 import java.lang.reflect.Constructor;
 import java.util.HashMap;

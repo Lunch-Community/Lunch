@@ -1,12 +1,12 @@
-package com.dudu.wearlauncher.ui.settings;
+package com.lazytong.launcher.ui.settings;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.RadioButton;
 import androidx.cardview.widget.CardView;
 import androidx.constraintlayout.widget.ConstraintLayout;
-import com.dudu.wearlauncher.R;
-import com.dudu.wearlauncher.ui.BaseActivity;
-import com.dudu.wearlauncher.utils.SharedPreferencesUtil;
+import com.lazytong.launcher.R;
+import com.lazytong.launcher.ui.BaseActivity;
+import com.lazytong.launcher.utils.SharedPreferencesUtil;
 import com.google.android.material.card.MaterialCardView;
 import me.shihao.library.XRadioGroup;
 
@@ -58,7 +58,7 @@ public class AppListSettingsActivity extends BaseActivity{
     }
     @Override
     protected void onDestroy() {
-        Intent intent = new Intent("com.dudu.wearlauncher.REFESH_APP_LIST");
+        Intent intent = new Intent("com.lazytong.launcher.REFESH_APP_LIST");
         sendBroadcast(intent);
         super.onDestroy();
     }

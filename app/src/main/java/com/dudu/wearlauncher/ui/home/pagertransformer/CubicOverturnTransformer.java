@@ -1,8 +1,8 @@
-package com.dudu.wearlauncher.ui.home.pagertransformer;
+package com.lazytong.launcher.ui.home.pagertransformer;
 import android.util.DisplayMetrics;
 import android.view.View;
 import androidx.viewpager.widget.ViewPager;
-import com.dudu.wearlauncher.WearLauncherApp;
+import com.lazytong.launcher.WearLauncherApp;
 /**
  * 立方体翻转效果
  */

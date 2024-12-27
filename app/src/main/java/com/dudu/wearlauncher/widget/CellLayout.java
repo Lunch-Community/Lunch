@@ -1,4 +1,4 @@
-package com.dudu.wearlauncher.widget;
+package com.lazytong.launcher.widget;
 import android.content.Context;
 import android.util.AttributeSet;
 import android.view.ViewGroup;

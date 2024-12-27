@@ -1,4 +1,4 @@
-package com.dudu.wearlauncher.ui.settings;
+package com.lazytong.launcher.ui.settings;
 
 import android.graphics.drawable.Drawable;
 import android.os.Build;
@@ -13,8 +13,8 @@ import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.bumptech.glide.request.RequestOptions;
 import com.bumptech.glide.request.target.SimpleTarget;
 import com.bumptech.glide.request.transition.Transition;
-import com.dudu.wearlauncher.R;
-import com.dudu.wearlauncher.ui.BaseActivity;
+import com.lazytong.launcher.R;
+import com.lazytong.launcher.ui.BaseActivity;
 import org.jetbrains.annotations.NotNull;
 
 public class AboutActivity extends BaseActivity {

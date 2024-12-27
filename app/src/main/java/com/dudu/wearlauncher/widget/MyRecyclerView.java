@@ -1,4 +1,4 @@
-package com.dudu.wearlauncher.widget;
+package com.lazytong.launcher.widget;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -8,7 +8,7 @@ import android.view.MotionEvent;
 import android.view.View;
 import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.RecyclerView;
-import com.dudu.wearlauncher.utils.OverScrollDelegate;
+import com.lazytong.launcher.utils.OverScrollDelegate;
 import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.List;

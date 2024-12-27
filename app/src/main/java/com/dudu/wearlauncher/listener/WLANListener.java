@@ -1,10 +1,10 @@
-package com.dudu.wearlauncher.listener;
+package com.lazytong.launcher.listener;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.net.wifi.WifiManager;
-import com.dudu.wearlauncher.utils.ILog;
+import com.lazytong.launcher.utils.ILog;
 
 public class WLANListener {
 

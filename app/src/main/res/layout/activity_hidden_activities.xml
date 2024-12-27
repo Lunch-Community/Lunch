@@ -13,7 +13,7 @@
         android:text="隐藏的活动"
         android:textColor="@color/theme_color"
         android:textStyle="bold"/>
-    <com.dudu.wearlauncher.widget.MyRecyclerView
+    <com.lazytong.launcher.widget.MyRecyclerView
         android:id="@+id/activity_list"
         android:layout_height="match_parent"
         android:layout_width="match_parent"/>

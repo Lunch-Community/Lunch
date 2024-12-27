@@ -1,4 +1,4 @@
-package com.dudu.wearlauncher.ui.settings;
+package com.lazytong.launcher.ui.settings;
 
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
@@ -7,9 +7,9 @@ import android.os.Bundle;
 import android.provider.Settings;
 import android.widget.Toast;
 import com.blankj.utilcode.util.ToastUtils;
-import com.dudu.wearlauncher.R;
-import com.dudu.wearlauncher.ui.BaseActivity;
-import com.dudu.wearlauncher.utils.SharedPreferencesUtil;
+import com.lazytong.launcher.R;
+import com.lazytong.launcher.ui.BaseActivity;
+import com.lazytong.launcher.utils.SharedPreferencesUtil;
 
 public class RequestPermissonActivity extends BaseActivity {
     @Override

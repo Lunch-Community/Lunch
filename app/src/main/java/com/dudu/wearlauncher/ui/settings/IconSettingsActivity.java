@@ -1,4 +1,4 @@
-package com.dudu.wearlauncher.ui.settings;
+package com.lazytong.launcher.ui.settings;
 
 import android.content.Intent;
 import android.content.pm.ResolveInfo;
@@ -6,10 +6,10 @@ import android.os.Bundle;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import com.blankj.utilcode.util.AppUtils;
-import com.dudu.wearlauncher.R;
-import com.dudu.wearlauncher.model.IconPack;
-import com.dudu.wearlauncher.ui.BaseActivity;
-import com.dudu.wearlauncher.utils.IconPackLoader;
+import com.lazytong.launcher.R;
+import com.lazytong.launcher.model.IconPack;
+import com.lazytong.launcher.ui.BaseActivity;
+import com.lazytong.launcher.utils.IconPackLoader;
 import java.util.List;
 import me.shihao.library.XRadioGroup;
 
@@ -35,7 +35,7 @@ public class IconSettingsActivity extends BaseActivity {
     
     @Override
     protected void onDestroy() {
-        Intent intent = new Intent("com.dudu.wearlauncher.REFESH_APP_LIST");
+        Intent intent = new Intent("com.lazytong.launcher.REFESH_APP_LIST");
         sendBroadcast(intent);
         super.onDestroy();
     }

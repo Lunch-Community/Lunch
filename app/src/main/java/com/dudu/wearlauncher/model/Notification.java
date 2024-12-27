@@ -1,4 +1,4 @@
-package com.dudu.wearlauncher.model;
+package com.lazytong.launcher.model;
 
 import android.app.PendingIntent;
 import android.content.Intent;

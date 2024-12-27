@@ -1,4 +1,4 @@
-package com.dudu.wearlauncher.ui;
+package com.lazytong.launcher.ui;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;

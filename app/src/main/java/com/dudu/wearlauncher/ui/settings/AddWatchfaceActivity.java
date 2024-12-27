@@ -1,4 +1,4 @@
-package com.dudu.wearlauncher.ui.settings;
+package com.lazytong.launcher.ui.settings;
 
 import android.app.Activity;
 import android.content.Context;
@@ -13,14 +13,14 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.resource.bitmap.RoundedCorners;
 import com.bumptech.glide.request.RequestOptions;
-import com.dudu.wearlauncher.R;
-import com.dudu.wearlauncher.model.WatchFaceInfo;
-import com.dudu.wearlauncher.ui.BaseActivity;
-import com.dudu.wearlauncher.utils.DensityUtil;
-import com.dudu.wearlauncher.utils.ILog;
-import com.dudu.wearlauncher.utils.SharedPreferencesUtil;
-import com.dudu.wearlauncher.utils.WatchFaceHelper;
-import com.dudu.wearlauncher.widget.MyRecyclerView;
+import com.lazytong.launcher.R;
+import com.lazytong.launcher.model.WatchFaceInfo;
+import com.lazytong.launcher.ui.BaseActivity;
+import com.lazytong.launcher.utils.DensityUtil;
+import com.lazytong.launcher.utils.ILog;
+import com.lazytong.launcher.utils.SharedPreferencesUtil;
+import com.lazytong.launcher.utils.WatchFaceHelper;
+import com.lazytong.launcher.widget.MyRecyclerView;
 import java.util.List;
 
 public class AddWatchfaceActivity extends BaseActivity {

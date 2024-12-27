@@ -1,4 +1,4 @@
-package com.dudu.wearlauncher.listener;
+package com.lazytong.launcher.listener;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -13,8 +13,8 @@ import android.telephony.PhoneStateListener;
 import android.telephony.TelephonyCallback;
 import android.telephony.TelephonyManager;
 import android.telephony.ims.feature.MmTelFeature;
-import com.dudu.wearlauncher.utils.ILog;
-import com.dudu.wearlauncher.utils.MobileDataUtil;
+import com.lazytong.launcher.utils.ILog;
+import com.lazytong.launcher.utils.MobileDataUtil;
 import com.tencent.bugly.proguard.br;
 
 public class MobileNetworkObserver {

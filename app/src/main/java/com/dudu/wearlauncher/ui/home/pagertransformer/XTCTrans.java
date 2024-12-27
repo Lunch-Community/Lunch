@@ -1,4 +1,4 @@
-package com.dudu.wearlauncher.ui.home.pagertransformer;
+package com.lazytong.launcher.ui.home.pagertransformer;
 
 import android.view.View;
 import androidx.viewpager.widget.ViewPager;

@@ -1,4 +1,4 @@
-package com.dudu.wearlauncher.listener;
+package com.lazytong.launcher.listener;
 
 import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;

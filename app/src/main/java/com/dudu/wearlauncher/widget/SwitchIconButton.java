@@ -1,4 +1,4 @@
-package com.dudu.wearlauncher.widget;
+package com.lazytong.launcher.widget;
 
 import android.content.Context;
 import android.content.Intent;
@@ -8,10 +8,10 @@ import android.view.View;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.AppCompatImageButton;
-import com.dudu.wearlauncher.R;
-import com.dudu.wearlauncher.model.FastSettingsItem;
-import com.dudu.wearlauncher.ui.home.fastsettings.NullItem;
-import com.dudu.wearlauncher.utils.ILog;
+import com.lazytong.launcher.R;
+import com.lazytong.launcher.model.FastSettingsItem;
+import com.lazytong.launcher.ui.home.fastsettings.NullItem;
+import com.lazytong.launcher.utils.ILog;
 import com.google.android.material.internal.CheckableImageButton;
 import org.jetbrains.annotations.NotNull;
 

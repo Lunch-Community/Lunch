@@ -1,7 +1,7 @@
-package com.dudu.wearlauncher.utils;
+package com.lazytong.launcher.utils;
 import android.content.Intent;
 import android.content.pm.ResolveInfo;
-import com.dudu.wearlauncher.WearLauncherApp;
+import com.lazytong.launcher.WearLauncherApp;
 import java.util.ArrayList;
 import java.util.List;
 

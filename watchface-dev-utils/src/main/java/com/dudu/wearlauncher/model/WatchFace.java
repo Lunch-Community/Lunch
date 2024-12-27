@@ -1,11 +1,11 @@
-package com.dudu.wearlauncher.model;
+package com.lazytong.launcher.model;
 
 import android.content.Context;
 import android.content.res.AssetManager;
 import android.content.res.Resources;
 import android.util.AttributeSet;
 import android.widget.FrameLayout;
-import com.dudu.wearlauncher.utils.ILog;
+import com.lazytong.launcher.utils.ILog;
 import dalvik.system.DexClassLoader;
 
 import java.lang.reflect.Field;
