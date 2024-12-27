@@ -25,7 +25,7 @@ android {
         create("Launcher") {
             keyAlias = "launcher"
             keyPassword = "lT.20090708"
-            storeFile = file("../launcher.keystore")
+            storeFile = file("../Launcher.keystore")
             storePassword = "lT.20090708"
         }
     }
