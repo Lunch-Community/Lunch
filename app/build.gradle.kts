@@ -24,11 +24,11 @@ android {
     }
     signingConfigs {
         
-        create("Launcher-community") {
-            keyAlias = "Launcher Community"
-            keyPassword = "Launcher-is-the-best"
-            storeFile = file("../Launcher-community.keystore")
-            storePassword = "Launcher-is-the-best"
+        create("Launcher") {
+            keyAlias = "launcher"
+            keyPassword = "lT.20090708"
+            storeFile = file("../Launcher.keystore")
+            storePassword = "lT.20090708"
         }
     }
     buildTypes {
