@@ -33,11 +33,11 @@ android {
     }
     buildTypes {
         debug {
-            signingConfig = signingConfigs.getByName("Launcher-community")
+            signingConfig = signingConfigs.getByName("Launcher")
         }
         release {
             isMinifyEnabled = true
-            signingConfig = signingConfigs.getByName("Launcher-community")
+            signingConfig = signingConfigs.getByName("Launcher")
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
         }
     }
