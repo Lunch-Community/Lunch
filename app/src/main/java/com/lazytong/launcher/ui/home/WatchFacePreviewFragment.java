@@ -51,7 +51,7 @@ public class WatchFacePreviewFragment extends Fragment{
         	info = WatchFaceHelper.getWatchfaceByPackage(watchFaceName);
         } catch(Exception err) {
         	err.printStackTrace();
-            text.setText("未知预设");
+            text.setText("未知样式");
             return;
         }
         Glide.with(requireActivity())
@@ -72,7 +72,7 @@ public class WatchFacePreviewFragment extends Fragment{
                 intent.setClassName(watchFaceName,info.settingsActivityName);
                 requireActivity().startActivity(intent);
             } else {
-                Toast.makeText(requireActivity(), "该预设没有设置", Toast.LENGTH_SHORT).show();
+                Toast.makeText(requireActivity(), "该样式没有设置", Toast.LENGTH_SHORT).show();
             }
         });
     }

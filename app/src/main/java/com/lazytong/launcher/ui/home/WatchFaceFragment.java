@@ -278,7 +278,7 @@ public class WatchFaceFragment extends Fragment{
                 watchFace = new WatchFaceBridge(watchFaceView);
                 if(watchFace != null) {
                 //watchFace.setOnClickListener(v->{
-                    //覆盖原Listener防止打不开预设切换界面
+                    //覆盖原Listener防止打不开样式切换界面
                 //});
                     layoutParams = new FrameLayout.LayoutParams(FrameLayout.LayoutParams.MATCH_PARENT,FrameLayout.LayoutParams.MATCH_PARENT);
                     watchFaceBox.addView(watchFaceView,layoutParams);
@@ -296,7 +296,7 @@ public class WatchFaceFragment extends Fragment{
             }
         } catch (Exception err) {
             onWatchFaceLoadFailed();
-            ILog.e("预设加载失败:" + err);
+            ILog.e("样式加载失败:" + err);
             err.printStackTrace();
             //FileIOUtils.writeFileFromString(watchFaceFolder + "/" + System.currentTimeMillis() + "watchface.log", err.toString());
         }
@@ -307,7 +307,7 @@ public class WatchFaceFragment extends Fragment{
         FrameLayout.LayoutParams lp = new FrameLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
         lp.gravity = Gravity.CENTER;
         TextView tv = new TextView(requireActivity());
-        tv.setText("预设加载失败");
+        tv.setText("样式加载失败");
         watchFaceBox.addView(tv, lp);
     }
     
@@ -315,7 +315,7 @@ public class WatchFaceFragment extends Fragment{
         FrameLayout.LayoutParams lp = new FrameLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
         lp.gravity = Gravity.CENTER;
         TextView tv = new TextView(requireActivity());
-        tv.setText("还没有预设哦\n快长按这里添加吧");
+        tv.setText("无样式\n长按此处添加");
         watchFaceBox.addView(tv, lp);
     }
 

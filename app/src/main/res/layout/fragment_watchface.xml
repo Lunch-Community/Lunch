@@ -14,7 +14,7 @@
     <FrameLayout
         android:layout_height="match_parent"
         android:layout_width="match_parent"
-        android:background="#FAFAFA"
+        android:background="@android:color/black"
         android:id="@+id/topDrawer">
 
         <com.lazytong.launcher.widget.MyRecyclerView
@@ -27,13 +27,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="还没有消息哦"/>
+            android:text="暂无消息"/>
     </FrameLayout>
 
     <LinearLayout
         android:layout_height="match_parent"
         android:layout_width="match_parent"
-        android:background="#FAFAFA"
+        android:background="@android:color/black"
         android:orientation="vertical"
         android:id="@+id/bottomDrawer">
 

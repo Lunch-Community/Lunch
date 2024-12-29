@@ -106,7 +106,6 @@ public class HomeActivity extends BaseActivity {
         ComponentName normalComponentName = new ComponentName(this,HomeActivity.class);
         pm.setComponentEnabledSetting(normalComponentName, PackageManager.COMPONENT_ENABLED_STATE_ENABLED, PackageManager.DONT_KILL_APP);
     }
-
     private void checkIsFirstStart() {
     	if((Boolean)SharedPreferencesUtil.getData(SharedPreferencesUtil.FIRST_START,true)) {
     		SharedPreferencesUtil.putData(SharedPreferencesUtil.SETTING_CENTER,"[{\"button\":\"button_wifi\"},{\"button\":\"button_mobiledata\"},{\"button\":\"button_bluetooth\"}]");

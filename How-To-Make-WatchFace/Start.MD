@@ -1,14 +1,14 @@
-# 预设开发指南
+# 样式开发指南
 
 Launcher具有高度自定义的特性\
-现在让我们来学习预设的开发
+现在让我们来学习样式的开发
 
 ## 要求
 - 一台能够流畅运行[Android Studio](https://developer.android.google.cn/studio?hl=zh-cn)的电脑
 - 或者一台能够运行[AndroidIDE](https://m.androidide.com/)的手机
 
 ## 开始之前
-Launcher的预设系统基于Android View实现\
+Launcher的样式系统基于Android View实现\
 这需要您拥有Android开发基础\
 若您还是一个Android开发小白 浏览本篇文章时可能会比较吃力
 
@@ -16,10 +16,10 @@ Launcher的预设系统基于Android View实现\
 打开您的IDE，创建一个Android应用项目\
 您可以自由配置您的应用包名等信息\
 静待Gradle Sync完成...\
-恭喜🎉您已经成功创建了您的第一个预设项目
+恭喜🎉您已经成功创建了您的第一个样式项目
 
-## 配置预设必要信息
-在Gradle中引入预设库,记得引入完Sync一下\
+## 配置样式必要信息
+在Gradle中引入样式库,记得引入完Sync一下\
 `build.gradle.kts`
 ```kotlin
 ...
@@ -36,7 +36,7 @@ dependencies {
 public class WatchFaceImpl extends WatchFace {
     /**
     * 注意一定要添加这个单参数的构造方法
-    * 这个构造方法用于启动器创建预设
+    * 这个构造方法用于启动器创建样式
     */
     public WatchFaceImpl(Context context){  
         super(context);
@@ -56,7 +56,7 @@ public class WatchFaceImpl extends WatchFace {
         <activity
             android:name=".StubActivity"
             android:exported="true">
-            <!--这个Activity声明仅作占位用，可不创建，仅用于启动器寻找预设-->
+            <!--这个Activity声明仅作占位用，可不创建，仅用于启动器寻找样式-->
             <intent-filter>
                 <action
                     android:name="com.lazytong.launcher.WATCHFACE" />
@@ -72,25 +72,25 @@ public class WatchFaceImpl extends WatchFace {
 `watchface_config.xml`
 ```xml
 <config
-    <!--预设的预览图片-->
+    <!--样式的预览图片-->
     preview="@drawable/preview"
-    <!--预设的名称-->
+    <!--样式的名称-->
     name="<watchFaceName>"
-    <!--预设入口类-->
+    <!--样式入口类-->
     watchface="<包名>.WatchFaceImpl"
-    <!--预设设置Activity(这里先不设置)-->
+    <!--样式设置Activity(这里先不设置)-->
     settings_activity=""
 />
 ```
 ## 小结
-到这里你已经搭建好了预设项目的基本框架
+到这里你已经搭建好了样式项目的基本框架
 
 <br />
 <p
     align="right">下一步：
 </p>
 <div align="right" >
-<a href="">使用View构建您的预设</a>
+<a href="">使用View构建您的样式</a>
 <br />
-<a href="">使用Canvas构建您的预设</a>
+<a href="">使用Canvas构建您的样式</a>
 </div>

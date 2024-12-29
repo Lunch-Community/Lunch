@@ -10,7 +10,6 @@ import android.content.res.XmlResourceParser;
 import android.graphics.drawable.Drawable;
 import com.lazytong.launcher.WearLauncherApp;
 import com.lazytong.launcher.model.IconPack;
-import com.tencent.bugly.proguard.i;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;

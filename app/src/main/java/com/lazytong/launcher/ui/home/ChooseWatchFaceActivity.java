@@ -77,7 +77,7 @@ public class ChooseWatchFaceActivity extends BaseActivity {
                     .into((ImageView) view.findViewById(R.id.wf_pre_img));
             view.findViewById(R.id.wf_pre_img).setScaleX(0.5F);
             view.findViewById(R.id.wf_pre_img).setScaleY(0.5F);
-            ((TextView) view.findViewById(R.id.wf_name_txt)).setText("添加预设");
+            ((TextView) view.findViewById(R.id.wf_name_txt)).setText("添加样式");
             view.setOnClickListener(v->{
                 Intent intent = new Intent(requireActivity(),AddWatchfaceActivity.class);
                 requireActivity().startActivity(intent);

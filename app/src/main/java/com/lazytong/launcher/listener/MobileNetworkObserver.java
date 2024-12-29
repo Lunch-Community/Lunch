@@ -15,7 +15,6 @@ import android.telephony.TelephonyManager;
 import android.telephony.ims.feature.MmTelFeature;
 import com.lazytong.launcher.utils.ILog;
 import com.lazytong.launcher.utils.MobileDataUtil;
-import com.tencent.bugly.proguard.br;
 
 public class MobileNetworkObserver {
 
