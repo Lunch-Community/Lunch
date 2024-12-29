@@ -25,7 +25,7 @@
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
                 android:layout_gravity="center"
-                android:textColor="@color/gray_light"
+                android:textColor="@color/gray_dark"
                 android:textSize="10sp"
                 android:text="启用以下权限以使用完整功能" />
 

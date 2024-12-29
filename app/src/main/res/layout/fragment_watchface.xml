@@ -14,7 +14,7 @@
     <FrameLayout
         android:layout_height="match_parent"
         android:layout_width="match_parent"
-        android:background="@android:color/black"
+        android:background="#FAFAFA"
         android:id="@+id/topDrawer">
 
         <com.lazytong.launcher.widget.MyRecyclerView
@@ -33,7 +33,7 @@
     <LinearLayout
         android:layout_height="match_parent"
         android:layout_width="match_parent"
-        android:background="@android:color/black"
+        android:background="#FAFAFA"
         android:orientation="vertical"
         android:id="@+id/bottomDrawer">
 

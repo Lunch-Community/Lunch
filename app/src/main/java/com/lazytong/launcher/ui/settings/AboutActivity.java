@@ -34,6 +34,6 @@ public class AboutActivity extends BaseActivity {
                         }
                     });
         }
-        ((TextView) findViewById(R.id.version_text)).setText(AppUtils.getAppVersionName() + "(" + AppUtils.getAppVersionCode() + ")");
+        ((TextView) findViewById(R.id.version_text)).setText("By LazyTong\n版本 " + AppUtils.getAppVersionCode());
     }
 }

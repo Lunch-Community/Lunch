@@ -3,7 +3,7 @@
     <color name="cardBackgroundColorNormal">#303133</color>
     <color name="red">#FF0000</color>
     <color name="theme_color">#03a9f4</color>
-    <color name="theme_color_20">#3303a9f4</color>
+    <color name="theme_color_20">#FF006400</color>
     <color name="ripple_color">#33FFFFFF</color>
-    <color name="gray_light">#a9a9a9</color>
+    <color name="gray_dark">#333333</color>
 </resources>

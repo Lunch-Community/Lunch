@@ -30,7 +30,7 @@ public class HomeActivity extends BaseActivity {
         setContentView(R.layout.activity_home);
 
         checkIsFirstStart();
-        checkIsXTC();
+        enableComponent();
 
         startService(new Intent(this, NotificationListenerService.class));
 
@@ -101,18 +101,12 @@ public class HomeActivity extends BaseActivity {
         }
     }
     
-    private void checkIsXTC() {
+    private void enableComponent() {
         PackageManager pm = getPackageManager();
-        ComponentName xtcComponentName = new ComponentName(this, com.xtc.i3launcher.module.home.view.activity.HomeActivity.class);
         ComponentName normalComponentName = new ComponentName(this,HomeActivity.class);
-        if (!Build.BRAND.equalsIgnoreCase("XTC")||!Build.MANUFACTURER.equalsIgnoreCase("XTC")) {
-            pm.setComponentEnabledSetting(xtcComponentName, PackageManager.COMPONENT_ENABLED_STATE_DISABLED, PackageManager.DONT_KILL_APP);
-            pm.setComponentEnabledSetting(normalComponentName, PackageManager.COMPONENT_ENABLED_STATE_ENABLED, PackageManager.DONT_KILL_APP);
-        }else{
-            pm.setComponentEnabledSetting(xtcComponentName, PackageManager.COMPONENT_ENABLED_STATE_ENABLED, PackageManager.DONT_KILL_APP);
-            pm.setComponentEnabledSetting(normalComponentName, PackageManager.COMPONENT_ENABLED_STATE_DISABLED, PackageManager.DONT_KILL_APP);
-        }
+        pm.setComponentEnabledSetting(normalComponentName, PackageManager.COMPONENT_ENABLED_STATE_ENABLED, PackageManager.DONT_KILL_APP);
     }
+
     private void checkIsFirstStart() {
     	if((Boolean)SharedPreferencesUtil.getData(SharedPreferencesUtil.FIRST_START,true)) {
     		SharedPreferencesUtil.putData(SharedPreferencesUtil.SETTING_CENTER,"[{\"button\":\"button_wifi\"},{\"button\":\"button_mobiledata\"},{\"button\":\"button_bluetooth\"}]");

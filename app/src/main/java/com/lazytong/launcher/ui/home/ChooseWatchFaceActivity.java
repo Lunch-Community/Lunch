@@ -43,6 +43,7 @@ public class ChooseWatchFaceActivity extends BaseActivity {
         try {
             List<String> packageList = SharedPreferencesUtil.getListData(SharedPreferencesUtil.SHOWING_WATCHFACE_LIST,String.class);
             List<Fragment> fragmentList = new ArrayList<>();
+            // 等待suncircle开源后需要修改
             String nowWatchFaceName = (String) SharedPreferencesUtil.getData(SharedPreferencesUtil.NOW_WATCHFACE, "watchface-example");
             int nowWatchFacePosition = 0;
             for (String packageName : packageList) {

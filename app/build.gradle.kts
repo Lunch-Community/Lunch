@@ -67,8 +67,6 @@ dependencies {
     implementation("com.blankj:utilcodex:1.31.1")
     //watchface-dev
     implementation(project(":watchface-dev-utils"))
-    //bugly
-    implementation("com.tencent.bugly:crashreport:4.1.9")
     //XRadioGroup
     implementation("com.github.fodroid:XRadioGroup:v1.5")
     //overScroll
