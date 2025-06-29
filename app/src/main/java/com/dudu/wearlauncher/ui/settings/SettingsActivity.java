@@ -22,6 +22,9 @@ public class SettingsActivity extends BaseActivity{
         findViewById(R.id.card_settings_setting_center).setOnClickListener(v -> {
             startActivity(new Intent(this, SettingCenterSettingsActivity.class));
         });
+        findViewById(R.id.card_settings_home_page).setOnClickListener(v -> {
+            startActivity(new Intent(this, HomePageSettingsActivity.class));
+        });
     }
     
 }

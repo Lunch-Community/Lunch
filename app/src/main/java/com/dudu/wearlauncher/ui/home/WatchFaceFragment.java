@@ -58,7 +58,6 @@ public class WatchFaceFragment extends Fragment{
     BrightnessObserver brightnessObserver;
     SwitchIconButton btn1,btn2,btn3;
     
-    
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -81,6 +80,9 @@ public class WatchFaceFragment extends Fragment{
         btn2 = view.findViewById(R.id.setting_center_btn2);
         btn3 = view.findViewById(R.id.setting_center_btn3);
         swipeDrawer = view.findViewById(R.id.swipe_drawer);
+
+        swipeDrawer.setTopDragOpen((Boolean) SharedPreferencesUtil.getData(SharedPreferencesUtil.MSG_LIST_ENABLED, true));
+        swipeDrawer.setBottomDragOpen((Boolean) SharedPreferencesUtil.getData(SharedPreferencesUtil.SETTING_CENTER_ENABLED, true));
         viewPager = ((HomeActivity)getActivity()).homeViewPager;
         try {
         	JSONArray oldArray = new JSONArray((String)SharedPreferencesUtil.getData(SharedPreferencesUtil.SETTING_CENTER,"[{\"button\":\"button_wifi\"},{\"button\":\"button_mobiledata\"},{\"button\":\"button_bluetooth\"}]"));
@@ -229,34 +231,34 @@ public class WatchFaceFragment extends Fragment{
             requireActivity().overridePendingTransition(R.anim.fade_in,R.anim.fade_out);
             return false;
         });
-        
+
         swipeDrawer.setOnDrawerState(new OnDrawerState(){
             @Override
             public void onStart(int arg0) {
                 // TODO: Implement this method
             }
-            
+
             @Override
             public void onMove(int arg0, float arg1) {
                 // TODO: Implement this method
             }
-            
+
             @Override
             public void onOpen(int arg0) {
                 viewPager.setScrollble(false);
             }
-            
+
             @Override
             public void onClose(int arg0) {
                 viewPager.setScrollble(true);
             }
-            
+
             @Override
             public void onCancel(int arg0) {
                 // TODO: Implement this method
             }
-            
-            
+
+
         });
 
         refreshWatchFace();

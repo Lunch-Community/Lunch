@@ -1,13 +1,13 @@
 package com.dudu.wearlauncher.ui.settings;
+
 import android.os.Build;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.GridLayout;
-import android.widget.GridView;
+import android.widget.Toast;
 import com.dudu.wearlauncher.R;
 import com.dudu.wearlauncher.model.FastSettingsItem;
 import com.dudu.wearlauncher.ui.BaseActivity;
@@ -20,11 +20,11 @@ import com.dudu.wearlauncher.utils.ILog;
 import com.dudu.wearlauncher.utils.SettingCenterManager;
 import com.dudu.wearlauncher.utils.SharedPreferencesUtil;
 import com.dudu.wearlauncher.widget.SwitchIconButton;
-import com.google.gson.JsonArray;
-import java.util.Map;
-import java.util.stream.Collectors;
 import org.json.JSONArray;
 import org.json.JSONObject;
+
+import java.util.Map;
+import java.util.stream.Collectors;
 
 public class SettingCenterSettingsActivity extends BaseActivity{
     SwitchIconButton btn1;
@@ -37,7 +37,6 @@ public class SettingCenterSettingsActivity extends BaseActivity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_setting_center_settings);
-        
         btn1 = findViewById(R.id.settings_btn_1);
         btn2 = findViewById(R.id.settings_btn_2);
         btn3 = findViewById(R.id.settings_btn_3);
@@ -79,22 +78,22 @@ public class SettingCenterSettingsActivity extends BaseActivity{
         for(int i = 0; i < SettingCenterManager.classMap.size(); ++i) {
         	SwitchIconButton button = new SwitchIconButton(this);
             FrameLayout child = new FrameLayout(this);
-            
+
             FrameLayout.LayoutParams flp = new FrameLayout.LayoutParams(DensityUtil.dip2px(this,48),DensityUtil.dip2px(this,48));
             flp.gravity = Gravity.CENTER;
             //flp.height = DensityUtil.dip2px(this,48);
             //flp.width = DensityUtil.dip2px(this,48);
             child.addView(button,flp);
-            
+
             GridLayout.LayoutParams glp = new GridLayout.LayoutParams();
             glp.setGravity(Gravity.CENTER);
             glp.columnSpec = GridLayout.spec(GridLayout.UNDEFINED,1f);
             glp.rowSpec = GridLayout.spec(GridLayout.UNDEFINED,1f);
             glp.topMargin = DensityUtil.dip2px(this,2);
             glp.bottomMargin = DensityUtil.dip2px(this,2);
-            
+
             btnList.addView(child,glp);
-            
+
             button.attach(items[i]);
             button.setOnClickListener(v->{
                 FastSettingsItem item = ((SwitchIconButton)v).getFastSettingsItem();
@@ -121,5 +120,11 @@ public class SettingCenterSettingsActivity extends BaseActivity{
         	}
         }
         return 0;
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Toast.makeText(this, "重启后生效", Toast.LENGTH_SHORT).show();
     }
 }

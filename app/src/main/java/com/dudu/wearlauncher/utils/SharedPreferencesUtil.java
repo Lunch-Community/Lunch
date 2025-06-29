@@ -3,16 +3,9 @@ package com.dudu.wearlauncher.utils;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.util.Log;
-import com.google.gson.Gson;
-import com.google.gson.JsonArray;
-import com.google.gson.JsonElement;
-import com.google.gson.JsonObject;
-import com.google.gson.JsonParser;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
+import com.google.gson.*;
+
+import java.util.*;
 
 /**
  * 
@@ -23,15 +16,17 @@ public class SharedPreferencesUtil {
  
     private static SharedPreferencesUtil util;
     private static SharedPreferences sp;
-    public static String FIRST_START = "first_start";
-    public static String SCREEN_TYPE = "screen_type";
-    public static String NOW_WATCHFACE = "now_watchface";
-    public static String HIDDEN_ACTIVITIES = "hidden_activities";
-    public static String APP_LIST_STYLE = "app_list_style";
-    public static String ICON_PACK = "icon_pack";
-    public static String SETTING_CENTER = "setting_center";
-    public static String SHOWING_WATCHFACE_LIST ="watchface_list";
-    public static String ORIGIN_APP_LIST = "origin_app_list";
+    public static final String FIRST_START = "first_start";
+    public static final String SCREEN_TYPE = "screen_type";
+    public static final String NOW_WATCHFACE = "now_watchface";
+    public static final String HIDDEN_ACTIVITIES = "hidden_activities";
+    public static final String APP_LIST_STYLE = "app_list_style";
+    public static final String ICON_PACK = "icon_pack";
+    public static final String SETTING_CENTER = "setting_center";
+    public static final String SHOWING_WATCHFACE_LIST = "watchface_list";
+    public static final String ORIGIN_APP_LIST = "origin_app_list";
+    public static final String MSG_LIST_ENABLED = "msg_list_enabled";
+    public static final String SETTING_CENTER_ENABLED = "setting_center_enabled";
     
     	
  

@@ -21,6 +21,44 @@
             android:layout_width="match_parent"
             android:orientation="vertical">
             <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/card_settings_home_page"
+                    android:layout_height="52dp"
+                    android:layout_width="match_parent"
+                    android:layout_margin="2dp"
+                    app:rippleColor="@color/ripple_color"
+                    app:cardCornerRadius="26dp"
+                    app:cardBackgroundColor="@color/cardBackgroundColorNormal"
+                    app:strokeWidth="0dp">
+
+                <LinearLayout
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_marginVertical="6dp"
+                        android:layout_marginHorizontal="10dp"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center_vertical">
+
+                    <ImageView
+                            android:layout_height="32dp"
+                            android:layout_width="32dp"
+                            android:src="@drawable/main_page"/>
+
+                    <TextView
+                            android:text="主页设置"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="4dp"
+                            android:textSize="12sp"
+                            android:textColor="@android:color/white"
+                            android:textStyle="bold"
+                            android:singleLine="true"
+                            android:layout_gravity="center"/>
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView
                 android:id="@+id/card_settings_setting_center"
                 android:layout_height="52dp"
                 android:layout_width="match_parent"
@@ -59,39 +97,39 @@
 
             </com.google.android.material.card.MaterialCardView>
             <com.google.android.material.card.MaterialCardView
-                android:id="@+id/card_settings_app_list"
-                android:layout_height="52dp"
-                android:layout_width="match_parent"
-                android:layout_margin="2dp"
-                app:rippleColor="@color/ripple_color"
-                app:cardCornerRadius="26dp"
-                app:cardBackgroundColor="@color/cardBackgroundColorNormal"
-                app:strokeWidth="0dp">
+                    android:id="@+id/card_settings_app_list"
+                    android:layout_height="52dp"
+                    android:layout_width="match_parent"
+                    android:layout_margin="2dp"
+                    app:rippleColor="@color/ripple_color"
+                    app:cardCornerRadius="26dp"
+                    app:cardBackgroundColor="@color/cardBackgroundColorNormal"
+                    app:strokeWidth="0dp">
 
                 <LinearLayout
-                    android:layout_height="wrap_content"
-                    android:layout_width="wrap_content"
-                    android:layout_marginVertical="6dp"
-                    android:layout_marginHorizontal="10dp"
-                    android:orientation="horizontal"
-                    android:layout_gravity="center_vertical">
-
-                    <ImageView
-                        android:layout_height="32dp"
-                        android:layout_width="32dp"
-                        android:src="@drawable/icon_app_list" />
-
-                    <TextView
-                        android:text="应用列表设置"
                         android:layout_height="wrap_content"
                         android:layout_width="wrap_content"
-                        android:layout_marginStart="10dp"
-                        android:layout_marginEnd="4dp"
-                        android:textSize="12sp"
-                        android:textColor="@android:color/white"
-                        android:textStyle="bold"
-                        android:singleLine="true"
-                        android:layout_gravity="center" />
+                        android:layout_marginVertical="6dp"
+                        android:layout_marginHorizontal="10dp"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center_vertical">
+
+                    <ImageView
+                            android:layout_height="32dp"
+                            android:layout_width="32dp"
+                            android:src="@drawable/icon_app_list"/>
+
+                    <TextView
+                            android:text="应用列表设置"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="4dp"
+                            android:textSize="12sp"
+                            android:textColor="@android:color/white"
+                            android:textStyle="bold"
+                            android:singleLine="true"
+                            android:layout_gravity="center"/>
 
                 </LinearLayout>
 
